@@ -5,13 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>i-dle 몰아보기</title>
   <link rel="icon" href="images/i-dle logo.png" type="image/png" />
-
-  <!-- CSS 링크 -->
-  <link rel="stylesheet" href="css/base.css" />
+  
+<!-- CSS 링크 -->
 </head>
 <body>
   <div class="header-bar"><div id="mainTitle">i-dle 몰아보기</div></div>
-  
   <div class="category-section cards">
     <div class="category-card"><a href="category.html?category=MV_SPECIAL_CLIP"><div class="category-thumbnail" style="background-image: url('https://i.ytimg.com/vi/baaNwRAhHBo/maxresdefault.jpg');"></div><div class="category-title">MV_SPECIAL_CLIP</div></a></div>
     <div class="category-card"><a href="category.html?category=SPECIAL_RELEASES"><div class="category-thumbnail" style="background-image: url('https://i.ytimg.com/vi/nG5USDluWxA/maxresdefault.jpg');"></div><div class="category-title">SPECIAL_RELEASES</div></a></div>
@@ -32,19 +30,18 @@
   <div class="top-bar">
     <div class="search-wrapper">
       <input type="text" id="searchInput" placeholder="Search all videos...">
-      <button id="searchBtn">🔍</button>
+      <button id="searchBtn" style="font-size: 16px; background: none; border: none; cursor: pointer;">🔍</button>
     </div>
     <button id="resetSearchBtn"><img src="images/reset.jpg" alt="reset"></button>
     <button onclick="location.href='index.html'"><img src="images/home.jpg" alt="home"></button>
   </div>
 
   <div style="display: flex; justify-content: flex-end; align-items: center; gap: 10px; padding: 0 20px 5px 20px;">
-    <button id="toggleSortBtn">오래된순</button>
+    <button id="toggleSortBtn" style="background-color: #222; color: #fff; border: none; padding: 6px 12px; border-radius: 6px; font-size: 14px; cursor: pointer;">오래된순</button>
     <div id="cardCount"></div>
   </div>
 
   <div class="card-container" id="allCards"></div>
-
   <div class="button-wrapper">
     <button id="loadMoreBtn" type="button">More</button>
     <button id="scrollTopBtn" title="scrollTop">↑</button>
@@ -66,6 +63,5 @@
   <script src="js/cards-COMMERCIALS.js"></script>
   <script src="js/cards-SHORTS.js"></script>
   <script src="js/cards-ETC.js"></script>
-  <script src="js/main.js"></script>
 </body>
 </html>
